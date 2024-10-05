@@ -8,6 +8,7 @@
 }
 :root{
     --mainorange: #ff770f;
+    --fontBlack: rgb(77, 75, 75);
 }
 header{
     background-color: white;
@@ -54,7 +55,95 @@ header .right ul{
     align-items: center;
     justify-content: space-evenly;
 }
-header .right ul li{
+
+header .right ul li:not(.org-btn, .active){
+    color: var(--fontBlack);
     font-size: 15px;
-    color: black;
+}
+
+.org-btn{
+    padding: 15px 35px;
+    background-color: var(--mainorange);
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.org-btn:hover{
+    background-color: #e26a0e;
+}
+
+.active{
+    color: var(--mainorange);
+}
+
+@media only screen and (max-width:950px){
+    header{
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+    header .left{
+        padding: 0 5%;
+        width: 100%;
+    }
+    header .toggle-icon{
+        display: block;
+    }
+
+    header .right{
+        width: 100%;
+        background-color: whitesmoke;
+    }
+
+    header .right ul{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .right li{
+        transition:  all 0.3s;
+    }
+
+    header .right a:not(:last-child){
+        padding: 15px 5%;
+        border-bottom: 1px solid rgb(192, 192, 192);
+        width: 100%;
+    }
+    header .org-btn{
+        display: none;
+    }
+
+    header .right ul li:hover{
+        color: var(--mainorange);
+    }
+
+    header .toggle-icon .icon.hide{
+        display: none;
+    }
+
+    header .right.hide{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:700px){
+    header.logo img{
+        width: 180px;
+    }
+
+    header .toggle-icon{
+        height: 30px;
+        width: 30px;
+    }
+
+    header .fa-bars, header .fa-xmark{
+        font-size: 15px;
+    }
+
+    haeder .right a:not(:last-child){
+        padding: 10px 5%;
+    }
 }
