@@ -143,7 +143,7 @@ header .right ul li:not(.org-btn, .active){
         font-size: 15px;
     }
 
-    haeder .right a:not(:last-child){
+    header .right a:not(:last-child){
         padding: 10px 5%;
     }
 }
