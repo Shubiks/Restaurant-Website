@@ -92,7 +92,7 @@ header .right ul li:not(.org-btn, .active){
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
