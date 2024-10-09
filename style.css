@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +11,7 @@
 :root{
     --mainorange: #ff770f;
     --fontBlack: rgb(77, 75, 75);
+    --heading: Berkshire Swash, cursive, serif;
 }
 header{
     background-color: white;
@@ -95,9 +98,46 @@ header .right ul li:not(.org-btn, .active){
 }
 
 .sec1 .content h1{
-    font-family: ;
+    font-family: var(--heading);
+    color: white;
+    font-weight: 500;
+    font-size: 150px;
+    margin: 30px 0;
 }
 
+.sec1 .content h3{
+    color: var(--mainorange);
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.sec1 .content h4{
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    position: relative;
+}
+
+.sec1 .content h4::before{
+    content: '';
+    position: absolute;
+    background-color: white;
+    left: -35%;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+}
+
+.sec1 .content h4::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    right: -35%;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+}
 @media only screen and (max-width:950px){
     header{
         flex-direction: column;
