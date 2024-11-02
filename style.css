@@ -337,6 +337,37 @@ header .right ul li:not(.org-btn, .active){
     object-fit: cover;
 }
 
+.sec5{
+    padding: 8% 5%;
+}
+
+.sec5.sec2 .poster{
+    height: 430px;
+    width: 50%;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, transparent, 80%, black),  url('./images/eatingpizza.jpg');
+    background-size: cover;
+    box-shadow: 0 30px 30px rgb(196, 196, 196);
+}
+
+.sec5.sec2 .content{
+    margin-left: 50px;
+    min-width: 45%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sec5.sec2 .org-btn{
+    width: fit-content;
+}
+
+.sec5.sec2 .poster div h1{
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
 @media only screen and (max-width:950px){
     header{
         flex-direction: column;
