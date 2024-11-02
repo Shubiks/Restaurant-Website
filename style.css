@@ -368,6 +368,25 @@ header .right ul li:not(.org-btn, .active){
     margin-bottom: 0;
 }
 
+footer{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./images/footer.jpg');
+    color: white;
+    text-align: center;
+    padding: 7% 0 3% 0;
+    margin-top: 5%;
+}
+
+footer h1{
+    font-family: var(--heading);
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+footer p{
+    font-size: 15px;
+}
+
 @media only screen and (max-width:950px){
     header{
         flex-direction: column;
