@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +14,7 @@
     --mainorange: #ff770f;
     --fontBlack: rgb(77, 75, 75);
     --heading: Berkshire Swash, cursive, serif;
+    --title: raleway, sans-serif;
 }
 header{
     background-color: white;
@@ -138,6 +141,103 @@ header .right ul li:not(.org-btn, .active){
     width: 40%;
     height: 1px;
 }
+
+.sec2{
+    padding: 9% 8%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sec2 .poster{
+    height: 430px;
+    width: 300px;
+    margin-left: 40px;
+    background: url('./images/Pizza-slice.jpg');
+    border-radius: 5px;
+}
+
+.sec2 div:nth-child(3){
+    min-width: 350px;
+    background: linear-gradient(to bottom, transparent, 80%, black), url('./images/eatingpizza.jpg');
+    background-size: cover;
+    background-position: 80%;
+    box-shadow: 0 30px 30px rgb(196, 196, 196);
+
+}
+
+.sec2 .content{
+    width: 100%;
+    max-width: 400px;
+    min-width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sec2 .content h5{
+    font-family: var(--heading);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.sec2 .content h1{
+    font-family: var(--heading);
+    font-size: 45px;
+}
+
+.sec2 .content h4{
+    font-family:var(--title) ;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.sec2 .content p{
+    font-size: 16px;
+    line-height: 1.6em;
+    color: rgb(92, 92, 92);
+}
+
+.sec2 .org-btn{
+    padding: 15px 35px;
+    font-size: 15px;
+    width: 15%;
+    min-width: 200px;
+}
+
+.sec2 .org-btn:hover{
+    transform: translateY(10px);
+}
+
+.sec2 .poster{
+    text-align: center;
+    color: white;
+    position: relative;
+
+}
+
+.sec2 .poster div{
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+}
+
+.sec2 .poster div h1{
+    font-family: var(--heading);
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.sec2 .poster div h4{
+    font-family: var(--title);
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
 @media only screen and (max-width:950px){
     header{
         flex-direction: column;
@@ -207,3 +307,5 @@ header .right ul li:not(.org-btn, .active){
         padding: 10px 5%;
     }
 }
+
+
