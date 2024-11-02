@@ -276,6 +276,67 @@ header .right ul li:not(.org-btn, .active){
     line-height: 1.5rem;
 }
 
+.sec4 {
+    background: url('./images/sec4back.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+
+}
+
+.sec4 .menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px 350px;
+    transform:translateY(-100px);
+    width: 90%;
+}
+
+.sec4 .menu div{
+    border: 1px solid var(--mainorange);
+}
+
+.sec4 .menu .content{
+    align-content: center;
+    text-align: center;
+    padding: 0 12%;
+    background-color: #fff8f3;
+}
+
+.sec4 .content h4{
+    font-family: var(--title);
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.sec4 .content p{
+    font-size: 15px;
+    color: rgb(92, 92, 92);
+    margin-bottom: 60px;
+    line-height: 1.4rem;
+}
+
+.sec4 .menu span{
+    font-size: 28px;
+    color: rgb(41, 41, 41);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+}
+
+.sec4 .menu .image{
+    overflow: hidden;
+}
+
+.sec4 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media only screen and (max-width:950px){
     header{
         flex-direction: column;
