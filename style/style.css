@@ -90,7 +90,7 @@ header .right ul li:not(.org-btn, .active){
     background: linear-gradient(
     rgba(0,0,0,0.7),
      rgba(0,0,0,0.7)),
-     url('./images/sec1main.jpg');
+     url('/images/sec1main.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -154,13 +154,13 @@ header .right ul li:not(.org-btn, .active){
     height: 430px;
     width: 300px;
     margin-left: 40px;
-    background: url('./images/Pizza-slice.jpg');
+    background: url('/images/Pizza-slice.jpg');
     border-radius: 5px;
 }
 
 .sec2 div:nth-child(3){
     min-width: 350px;
-    background: linear-gradient(to bottom, transparent, 80%, black), url('./images/eatingpizza.jpg');
+    background: linear-gradient(to bottom, transparent, 80%, black), url('/images/eatingpizza.jpg');
     background-size: cover;
     background-position: 80%;
     box-shadow: 0 30px 30px rgb(196, 196, 196);
@@ -277,7 +277,7 @@ header .right ul li:not(.org-btn, .active){
 }
 
 .sec4 {
-    background: url('./images/sec4back.jpg');
+    background: url('/images/sec4back.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -345,7 +345,7 @@ header .right ul li:not(.org-btn, .active){
     height: 430px;
     width: 50%;
     border-radius: 5px;
-    background: linear-gradient(to bottom, transparent, 80%, black),  url('./images/eatingpizza.jpg');
+    background: linear-gradient(to bottom, transparent, 80%, black),  url('/images/eatingpizza.jpg');
     background-size: cover;
     box-shadow: 0 30px 30px rgb(196, 196, 196);
 }
@@ -369,7 +369,7 @@ header .right ul li:not(.org-btn, .active){
 }
 
 footer{
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./images/footer.jpg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/images/footer.jpg');
     color: white;
     text-align: center;
     padding: 7% 0 3% 0;
@@ -385,6 +385,25 @@ footer h1{
 
 footer p{
     font-size: 15px;
+}
+
+.msec1{
+    padding: 0 8%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.msec1 h1{
+    font-size: 70px;
+    font-family: var(--heading);
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: white;
 }
 
 @media only screen and (max-width:950px){
