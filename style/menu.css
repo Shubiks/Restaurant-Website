@@ -120,3 +120,50 @@
     border: none;
 }
 
+@media only screen and (max-width:950px) {
+    .msec1{
+        height: 60dvh;
+    }
+    .msec1 h1{
+        font-size: 60px;
+    }
+    .msec2{
+        padding: 0 5%;
+    }
+    .msec2 .dish-content h2{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .msec2 .dish-content img{
+        width: 150px;
+        margin-bottom: 0;
+    }
+    .msec2 .dish-content .item-price{
+        margin: 30px 0;
+    }
+    .msec2 .dish-content .item-price div:nth-child(2){
+        margin-left: 30px;
+    }
+    .msec2 .dish-content .item-price h3{
+        font-size: 24px;
+    }
+    .msec2 .dish-content .item-price p{
+        font-size: 14px;
+    }
+    .msec3{
+        padding: 0 5%;
+    }
+    .msec3 .cheap-menu{
+        align-items: flex-start;
+    }
+    .msec3 .cheap-menu-box{
+        width: 42vw;
+        padding: 2% 0;
+    }
+    .msec3 .cheap-item{
+        padding: 15px;
+    }
+    .msec3 .cheap-item h3{
+        font-size: 21px;
+    }
+}
